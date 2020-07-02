@@ -1,5 +1,5 @@
 #rank {
-    width: 250x;
+    width: 200x;
     float: left;
     border: 3px;
     border-style: outset;
@@ -7,7 +7,7 @@
 }
 
 #board{
-    width: 600px;
+    width: 670px;
     float: left;
     background-color: #DEFFAC;
 }
