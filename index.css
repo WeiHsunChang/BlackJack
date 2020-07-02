@@ -1,0 +1,35 @@
+#rank {
+    width: 250x;
+    float: left;
+    border: 3px;
+    border-style: outset;
+
+}
+
+#board{
+    width: 600px;
+    float: left;
+    background-color: #DEFFAC;
+}
+
+#money{
+    height: 80px;
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+div{
+    margin: 20px;
+    padding: 10x;
+}
+
+img{
+    width: 100px; 
+    margin: 5px; 
+}
+
+.icon{
+    width: 30px;
+}
+
