@@ -17,6 +17,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -71,8 +73,10 @@
                     <p style="font-weight:bold; text-align:center;">Dealer</p>
                 </thead>
                 <tbody>
-                    <tr id="dealer_card">
-                        <img src="imgs/PokerCard/10C.png">
+                    <tr>
+                        <div id="dealer_card">
+
+                        </div>
                     </tr>
                 </tbody>
             </table>
@@ -81,32 +85,44 @@
         <hr>
         <div id="money">
             <img class="icon" src="imgs/potmoney_icon.png">
-            <p> 100</p>
+            <p id="pot_money"></p>
+            
         </div>
         <hr>
 
         <div id="player">
             <table>
                 <thead>
-                    <p id = "player_info" style="font-weight:bold; text-align:center;">Player<img class="icon" src="imgs/money_icon.png">
+                    <p id="player_info" style="font-weight:bold; text-align:center;"><img class="icon"
+                            src="imgs/money_icon.png">3000
                     </p>
                 </thead>
                 <tbody>
-                    <tr id="player_card">
-                        <img src="imgs/PokerCard/10C.png">
+                    <tr>
+                        <div id="player_card">
+
+                        </div>
                     </tr>
                 </tbody>
             </table>
         </div>
+        
+        <hr>
 
-        <div id="btnControl">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <input type="text">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
+        <div>
+            <button id="btnStart" onclick="fnStart()" type="button" class="btn btn-secondary btn-lg">開始</button>
+            <input id="betsize" type="text" placeholder="下注金額">
+            <button id="btnAddcard" onclick="fnAddcard()" type="button" class="btn btn-secondary btn-lg">加牌</button>
+            <button id="btnFold" onclick="fnFold()" type="button" class="btn btn-secondary btn-lg">開牌</button>
+        </div>
+        <div  id="btnControl">
+            <button id="btnNext" onclick="fnNext()" type="button" class="btn btn-dark btn-block">下一輪</button>
+            <button id="btnNext" onclick="fnEnd()" type="button" class="btn btn-danger btn-block">結束遊戲</button>
         </div>
     </div>
 
+    <script src="index.js"></script>
+    <script type="text/javascript" src="card.json"></script>
 
 </body>
 

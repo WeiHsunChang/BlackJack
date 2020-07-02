@@ -20,12 +20,12 @@
 }
 
 div{
-    margin: 20px;
+    margin: 15px;
     padding: 10x;
 }
 
 img{
-    width: 100px; 
+    width: 90px; 
     margin: 5px; 
 }
 
@@ -33,3 +33,6 @@ img{
     width: 30px;
 }
 
+#dealer_card, #player_card{
+    height: 138px;
+}
